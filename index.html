@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การพัฒนาชุดการใช้งาน AI (ChatGPT) ในการเรียนรู้ออนไลน์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="glow-border">
+    <h1>การพัฒนาชุดการใช้งาน AI (ChatGPT) ในการเรียนรู้ออนไลน์</h1>
+
+    <nav>
+        <button onclick="showPage('home')">หน้าแรก</button>
+        <button onclick="showPage('learn')">เรียนรู้ AI</button>
+        <button onclick="showPage('quiz')">แบบทดสอบ</button>
+    </nav>
+</header>
+
+<section id="home" class="page">
+    <h2>👋 ยินดีต้อนรับ</h2>
+    <p>เว็บไซต์นี้สร้างขึ้นเพื่อทดลองถามตอบ AI และทดลองเรียนรู้เครื่องมืออัจฉริยะ</p>
+</section>
+
+<section id="learn" class="page" style="display:none;">
+    <h2>🤖 ทดลองถาม AI แบบเรียลไทม์</h2>
+
+    <select id="roleSelect">
+        <option value="ครูสอนแบบเข้าใจง่าย">ครูสอนแบบเข้าใจง่าย</option>
+        <option value="เพื่อนคุยเล่นตอบแบบตลก">เพื่อนคุยเล่นตอบแบบตลก</option>
+        <option value="อธิบายอย่างสั้นกระชับ">อธิบายแบบสั้นๆกระชับ</option>
+    </select>
+
+    <input id="userInput" placeholder="พิมพ์คำถามที่นี่...">
+    <button onclick="callAI()">ส่งให้ AI</button>
+
+    <p id="reply"></p>
+</section>
+
+<section id="quiz" class="page" style="display:none;">
+    <h2>📝 แบบทดสอบออนไลน์</h2>
+
+    <p id="questionText"></p>
+    <div id="options"></div>
+    <p id="result"></p>
+
+    <button onclick="nextQuestion()">ข้อถัดไป</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

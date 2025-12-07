@@ -1,0 +1,37 @@
+body {
+    font-family: "Prompt", sans-serif;
+    background: linear-gradient(135deg, #7a00ff, #ff5ec6);
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+nav button {
+    background: #ff8be6;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background: #ffe2fb;
+    color: #7a00ff;
+}
+
+/* กรอบไฟวิ่ง */
+.glow-border {
+    border: 2px solid transparent;
+    padding: 15px;
+    margin-bottom: 20px;
+    animation: glow 3s infinite linear;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 7px #ff6ede; }
+    50% { box-shadow: 0 0 15px #b05fff; }
+    100% { box-shadow: 0 0 7px #ff6ede; }
+}
